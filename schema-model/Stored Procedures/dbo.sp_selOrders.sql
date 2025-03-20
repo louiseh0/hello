@@ -1,0 +1,13 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_selOrders](@s CHAR(20), @s2 INT OUT)
+AS
+BEGIN
+	SELECT @s2 = 22;
+	SELECT * from orders;
+END
+
+GO
